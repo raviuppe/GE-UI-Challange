@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link  href="style.css" rel="stylesheet">
+    <title>UI Challange</title>
+</head>
+<body>
+   
+        <div class="wrapper">
+
+                <div class="container">
+
+                        <div class="row">
+
+                                <div class="table_row">
+
+                                        <table id="gridTable" class="table table-bordered table-condensed table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Label</th>
+                                                        <th>Input Type</th>
+                                                        <th>Min Length</th>
+                                                        <th>Max Length</th>
+                                                        <th>Min Date</th>
+                                                        <th>Max Date</th>
+                                                        <th>Options</th>
+                                                        <th>Bg Color</th>
+                                                        <th>Text Color</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                </div>
+                        </div>
+
+                        <div class="row">
+
+                                <div class="col-md-7">
+
+                                       
+        
+                                        <div class="form">
+
+                                                <form action="#" id="postmetaform" method="post">
+                                                        <h5>Add New Inputs</h5>
+
+                                                        <div class="row">
+                                                        
+                                                                <div class="col-md-4"><label>Specify Label</label></div>
+
+                                                                <div class="col-md-8"><input type="text" required name="input_label" class="input_label" id="input_label"></div>
+
+                                                        </div>
+
+
+                                                        <div class="row">
+
+                                                                        <div class="col-md-4">
+
+                                                                                 <label>Select Input Type</label>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-8">
+
+                                                                                <select name="itype"  class="itype" id="itype">
+
+                                                                                        <option value="text">Text</option>
+                                                                                        <option value="date">Date</option>
+                                                                                        <option value="email">email</option>
+                                                                                        <option value="password">Password</option>
+                                                                                        <option value="radio">Radio</option>
+                                                                                        <option value="checkbox">Checkbox</option>
+                                                                                </select>
+
+                                                                        </div>
+
+                                                        </div>
+
+                                                        <div class="row maxmin" >
+
+
+                                                                <div class="col-md-4"> <label>Specify Min Length</label></div>
+
+                                                                <div class="col-md-8"> <input type="text"  name="min_length" class="min_length" id="min_length"> </div>
+
+
+                                                                <div class="col-md-4"> <label>Specify Max Length</label></div>
+
+                                                               <div class="col-md-8"> <input type="text"  name="max_length" class="max_length" id="max_length"> </div>
+
+                                                              
+
+                                                        </div>
+                                                        
+
+                                                        <div class="row minmaxdate">
+
+                                                                <div class="col-md-4"><label>Specify Min Date</label></div>
+
+                                                                <div class="col-md-8"><input type="date" name="input_mindate" class="input_mindate" id="input_mindate"></div>
+
+                                                                <div class="col-md-4"><label>Specify Max Date</label></div>
+
+                                                                <div class="col-md-8"><input type="date" name="input_maxdate" class="input_maxdate" id="input_maxdate"></div>
+
+                                                        </div>
+
+                                                        <div class="row options">
+                                                                
+                                                                <div class="col-md-4"><label>Options</label></div>
+                                                                <div class="col-md-8"><textarea name="options" class="options" id="options"></textarea></div>
+
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                                <div class="col-md-4"><label>Specify Background color</label></div>
+
+                                                                <div class="col-md-8"><input required type="color" name="input_bg_color" class="input_bg_color" id="input_bg_color"></div>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                                <div class="col-md-4"><label>Specify Text color</label></div>
+
+                                                                <div class="col-md-8"><input required type="color" name="input_text_color" class="input_text_color" id="input_text_color"></div>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                                <input type="submit" class="btn btn-primary" id="submitfields" value="Add">
+
+                                                               
+                                                        </div>
+                                                </form>
+                                        </div>
+        
+                                </div>
+        
+                                <div class="col-md-5">
+        
+                                       <h5>Rendered Version of Metadata</h5>
+
+                                      
+                                       <table id="renderform" class="rendertable"></table>
+
+                                </div>
+                        </div>
+
+                </div>
+
+                
+
+        </div>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+ <script tye="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>

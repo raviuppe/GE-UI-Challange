@@ -1,0 +1,74 @@
+.body {
+    background-color:#fff;
+}
+.wrapper {
+
+    padding:50px 0;
+}
+.wrapper h5{
+
+    margin: 20px 0;
+}
+form {
+
+    font-size: 12px;
+}
+#renderform {
+    font-size: 12px;
+    width: 100%;
+}
+.labelrender {
+    width: 40%;
+    padding:0 10px;
+}
+.inputrender {
+    width: 60%;
+}
+.table_row {
+
+    font-size: 12px;
+}
+form input,select {
+
+    margin:5px 0;
+    padding: 3px;
+}
+
+#renderform tr {
+
+    margin:5px 0;
+    padding: 3px;
+    display: block;
+
+}
+
+form .btn-primary {
+
+    width: 120px;
+    background-color:#3794ff;
+    color:#fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin: 20px 0;
+
+}
+
+label span {
+    font-size: 1rem;
+  }
+  
+  label.error {
+      color: red;
+      font-size: 1rem;
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+  }
+  
+  input.error {
+      border: 1px dashed red;
+      font-weight: 300;
+      color: red;
+  }
